@@ -48,3 +48,13 @@ ol, ul {
 .game-info {
     margin-left: 20px;
 }
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.todo-item-crossed {
+    text-decoration: line-through;
+}

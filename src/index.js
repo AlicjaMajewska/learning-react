@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import {Clock} from "./Clock";
+import {ToDoApp} from "./Todo";
 
 /*
  IDEAS FOR FURTHER DEVELOPMENT:
@@ -129,6 +130,7 @@ class Game extends React.Component {
                         <ol>{moves}</ol>
                     </div>
                 </div>
+                <ToDoApp/>
             </div>
         );
     }
