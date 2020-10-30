@@ -59,20 +59,22 @@ ol, ul {
     text-decoration: line-through;
 }
 
-.name-form {
+.input-form {
     display: inline-flex;
     flex-direction: column;
     padding-bottom: 2rem;
 }
 
-.name-submit {
-    flex-grow: 0;
-}
-
-.name-label {
+.input-label {
     padding-bottom: 0.5rem;
 }
 
 .name-input {
     margin-left: 1rem;
+}
+
+.textarea-label {
+    display: inline-flex;
+    flex-direction: column;
+    padding-bottom: 0.5rem;
 }

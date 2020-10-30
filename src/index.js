@@ -4,6 +4,7 @@ import './index.css';
 import {Clock} from "./Clock";
 import {ToDoApp} from "./Todo";
 import {NameForm} from "./name-form";
+import {EssayForm} from "./essay-form";
 
 /*
  IDEAS FOR FURTHER DEVELOPMENT:
@@ -140,6 +141,7 @@ function App(props) {
             <NameForm/>
             <Game/>
             <ToDoApp/>
+            <EssayForm/>
         </div>
     );
 }

@@ -21,12 +21,12 @@ export class NameForm extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit} className="name-form">
-                <label className="name-label">
+            <form onSubmit={this.handleSubmit} className="input-form">
+                <label className="input-label">
                     Name:
                     <input className="name-input" type="text" value={this.state.value} onChange={this.handleChange}/>
                 </label>
-                <input className="name-submit" type="submit" value="Submit"/>
+                <input type="submit" value="Submit"/>
             </form>
         );
     }
