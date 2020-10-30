@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import {Clock} from "./Clock";
 import {ToDoApp} from "./Todo";
+import {NameForm} from "./name-form";
 
 /*
  IDEAS FOR FURTHER DEVELOPMENT:
@@ -118,28 +119,35 @@ class Game extends React.Component {
         }
 
         return (
-            <div>
-                <Clock/>
-                <div className="game">
-                    <div className="game-board">
-                        <Board squares={current.squares}
-                               onClick={(i) => this.handleClick(i)} s/>
-                    </div>
-                    <div className="game-info">
-                        <div>{status}</div>
-                        <ol>{moves}</ol>
-                    </div>
+            <div className="game">
+                <div className="game-board">
+                    <Board squares={current.squares}
+                           onClick={(i) => this.handleClick(i)} s/>
                 </div>
-                <ToDoApp/>
+                <div className="game-info">
+                    <div>{status}</div>
+                    <ol>{moves}</ol>
+                </div>
             </div>
         );
     }
 }
 
+function App(props) {
+    return (
+        <div>
+            <Clock/>
+            <NameForm/>
+            <Game/>
+            <ToDoApp/>
+        </div>
+    );
+}
+
 // ========================================
 
 ReactDOM.render(
-    <Game/>,
+    <App/>,
     document.getElementById('root')
 );
 

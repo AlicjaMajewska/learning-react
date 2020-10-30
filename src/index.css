@@ -58,3 +58,21 @@ ol, ul {
 .todo-item-crossed {
     text-decoration: line-through;
 }
+
+.name-form {
+    display: inline-flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.name-submit {
+    flex-grow: 0;
+}
+
+.name-label {
+    padding-bottom: 0.5rem;
+}
+
+.name-input {
+    margin-left: 1rem;
+}
