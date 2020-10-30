@@ -5,6 +5,7 @@ import {Clock} from "./Clock";
 import {ToDoApp} from "./Todo";
 import {NameForm} from "./name-form";
 import {EssayForm} from "./essay-form";
+import {FlavourForm} from "./flavour-form";
 
 /*
  IDEAS FOR FURTHER DEVELOPMENT:
@@ -142,6 +143,7 @@ function App(props) {
             <Game/>
             <ToDoApp/>
             <EssayForm/>
+            <FlavourForm/>
         </div>
     );
 }
